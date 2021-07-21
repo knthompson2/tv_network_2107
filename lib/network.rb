@@ -25,4 +25,10 @@ class Network
     actors_by_show
   end
 
+  def shows_by_actor
+    shows_by_actor = {}
+    @shows.actors.each do |actor|
+      shows_by_actor[actor] = actors_by_show.value == actor
+    end
+  end
 end
