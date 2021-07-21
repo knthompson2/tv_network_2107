@@ -62,7 +62,7 @@ RSpec.describe Show do
     expect(nbc.actors_by_show).to eq({knight_rider => ["David Hasselhoff", "William Daniels"], parks_and_rec => ["Amy Poehler", "Nick Offerman"]})
   end
 
-  xit 'determines show_by_actors' do
+  it 'determines show_by_actors' do
     nbc = Network.new("NBC")
     michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
     kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
